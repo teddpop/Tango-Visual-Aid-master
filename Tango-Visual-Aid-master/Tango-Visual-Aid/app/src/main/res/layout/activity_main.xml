@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spencerfricke.tango_visual_aid.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/display_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Move closer to an object to feel the difference viberation levels"
+                android:textAlignment="center"
+                android:textSize="32sp"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fafafa"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="Main panel header"-->
+            <!--android:src="@drawable/drawer_header_main" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef" />
+
+        <EditText
+            android:id="@+id/ip_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/change_ip_button"
+            style="@style/TextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:drawablePadding="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:text="Change IP" />
+    </LinearLayout>
+</com.spencerfricke.tango_visual_aid.CustomDrawerLayout>
